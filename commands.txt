@@ -1,0 +1,39 @@
+cd /c/repos                 	//change the directory
+get init get_demo          	//Initialized empty Git repository in C:/Repos/git_demo/.git/
+
+git clone https://github.com/thegevorgyan/exercise.git                  
+git config --global user.email "g.artak@yahoo.com"
+git config --global user.name "thegevorgyan"
+
+cd get_demo		    	//go to 'get_demo' directory
+
+clear                      	//clear information 
+
+git status		    	//Show the working tree status
+
+git add index.html	    	//add current file to preparing commit
+git add .		    	//add all files to preparing commit
+git add --all                   //add all files to preparing commit
+
+git rm --cached index.html	//remove current file to preparing commit
+
+git commit                      //create a commit to write name in vim
+git commit -m "first commit"	//create a commit with name
+
+git branch			//verify branch
+git branch dev			//create a 'dev' branch
+git branch -d or -D dev		//deleted branch 'dev'
+git checkout dev		//switched to branch 'dev'
+git checkout -b dev		//create and switched to branch 'dev'
+git merge master		//if you are in 'dev'. Already up to date
+git merge dev			//and then if you are in 'master'
+
+
+git push -u origin master
+
+
+git difftool HEAD
+
+git remote -v
+
+1: 0 : 0 
